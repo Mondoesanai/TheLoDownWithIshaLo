@@ -462,6 +462,13 @@ body::after {
 .sess.past .pr::after { content: "Completed"; display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--mauve); }
 @media (max-width: 720px) { .sess { grid-template-columns: 76px 1fr; padding: 16px; gap: 16px; } .sess .dt { width: 76px; } .sess .pr { grid-column: 1 / -1; text-align: left; display: flex; align-items: center; justify-content: space-between; } .sess .pr .btn { margin: 0; } }
 
+/* ---------- sessions: "coming soon" placeholder ---------- */
+.soon { text-align: center; padding: clamp(48px, 7vw, 80px) clamp(24px, 5vw, 60px); border-radius: 30px; background: #fff9f1; box-shadow: var(--sh-1); display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.soon-mark { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font-size: 1.4rem; color: var(--plum); background: radial-gradient(circle at 30% 25%, #fff7ea, var(--peach) 45%, var(--apricot)); box-shadow: var(--sh-1), inset 0 -6px 12px rgba(191, 91, 58, .25); animation: bob 5s ease-in-out infinite; }
+.soon h3 { font-size: clamp(1.5rem, 3vw, 2rem); max-width: 16em; }
+.soon p { max-width: 34em; color: var(--ink-soft); margin: 0; }
+.soon .btn { margin-top: 6px; }
+
 /* certification */
 .cert { background: var(--sand); }
 .cap-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(20px, 4vw, 60px); margin-top: 40px; }

@@ -1,0 +1,24 @@
+<!--
+  RESTORING REAL SESSIONS
+  =======================
+  Once Isha sends real AI Leadership Lab dates, replace the ".soon" block in
+  programs.html (inside <div style="margin-top:..." class="reveal"> under the
+  "Upcoming sessions" eyebrow) with the filter bar + session list below.
+  Add one <article class="sess"> per date; main.js already handles the
+  in-person/virtual filter and auto-marks past dates "Completed".
+-->
+<div class="filters" role="group" aria-label="Filter sessions">
+  <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="irl">In person</button><button aria-pressed="false" data-f="virtual">Virtual</button>
+</div>
+<div id="sessions">
+  <article class="sess" data-date="YYYY-MM-DD" data-type="irl">
+    <div class="dt"><small>Mon</small><b>DD</b><small>YYYY</small></div>
+    <div><h4>Power Lunch &amp; Learn</h4><div class="meta"><span>📍 City, ST</span><span>🍽 Lunch provided</span></div></div>
+    <div class="pr">$125<br><a class="btn btn-clay" href="#" data-reserve="Month DD, YYYY — City, ST ($125)">Reserve a seat <span class="arr">→</span></a></div>
+  </article>
+  <article class="sess" data-date="YYYY-MM-DD" data-type="virtual">
+    <div class="dt"><small>Mon</small><b>DD</b><small>YYYY</small></div>
+    <div><h4>Virtual Lab</h4><div class="meta"><span>💻 Live online</span></div></div>
+    <div class="pr">$100<br><a class="btn btn-clay" href="#" data-reserve="Month DD, YYYY — Virtual ($100)">Reserve a seat <span class="arr">→</span></a></div>
+  </article>
+</div>
