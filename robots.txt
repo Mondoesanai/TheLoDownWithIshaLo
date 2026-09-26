@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://the-lo-down-with-isha-lo.vercel.app/sitemap.xml
