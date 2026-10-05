@@ -485,10 +485,29 @@ body::after {
 .cap-card h3 { margin: .5em 0 .6em; font-size: clamp(1.7rem, 3vw, 2.5rem); }
 .cap-card p { font-size: 1.2rem; line-height: 1.55; margin: 0; transition: opacity .4s var(--ease); }
 @media (max-width: 900px) { .cap-grid { grid-template-columns: 1fr; } .cap-card { position: static; order: -1; } }
-.seal { width: 150px; height: 150px; position: relative; flex: none; }
-.seal svg { width: 100%; height: 100%; animation: spin 40s linear infinite; }
-.seal .c { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; font-family: var(--serif); font-size: 1.05rem; line-height: 1.1; letter-spacing: -.02em; }
-.seal .c small { display: block; font-family: var(--sans); font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--clay-d); margin-top: 3px; }
+/* The CPD accreditation mark. The supplied file is shown as issued — it is
+   somebody else's certification mark, so it is never recoloured, cropped or
+   redrawn. It comes white-on-navy, which is how the CPD Standards Office
+   presents it, so it keeps its own background rather than being knocked out
+   onto the cream page where the type would vanish. Rounding and lifting it is
+   presentation around the mark; the mark itself is untouched. Height-driven so
+   the supplied aspect ratio survives whatever file replaces this one.
+   .seal-pending is set by the img's onerror if the file ever goes missing, and
+   swaps in a plain written statement rather than an imitation. */
+.seal { flex: none; display: grid; place-items: center; }
+.seal img {
+  display: block; height: 150px; width: auto; border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(20, 40, 80, .14), 0 12px 28px -10px rgba(20, 40, 80, .4);
+}
+.seal .seal-text { display: none; }
+.seal-pending .seal-text {
+  display: block; text-align: center; padding: 18px 24px;
+  border: 1px solid rgba(180, 71, 30, .28); border-radius: 18px;
+  background: var(--sand); max-width: 15em;
+}
+.seal-pending .seal-text b { display: block; font-family: var(--serif); font-size: 1.1rem; line-height: 1.15; letter-spacing: -.02em; }
+.seal-pending .seal-text span { display: block; font-size: .82rem; margin-top: 2px; color: var(--clay-d); }
+.seal-pending .seal-text small { display: block; font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--clay-d); margin-top: 9px; opacity: .75; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .cert-top { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; margin-top: 26px; }
 
