@@ -1,0 +1,20 @@
+# The Lo Down with Isha Lo
+
+> Equipping people to live, work, and lead in the Distributed Intelligence™ era.
+
+The Lo Down with Isha Lo is an executive AI leadership training and change management consulting business founded by Isha Lo, a Global Transformation Strategist. The company serves leaders and organizations in Dallas | Fort Worth, and runs a mission to transform the digital wellness of 1,000,000 women by May 2027.
+
+## What we offer
+- AI Leadership Lab — a 2½-hour applied session, in person or virtual.
+- Leading AI with Human Intelligence™ Certification — a 12-CPD-hour accredited certification.
+- Executive AI Leadership Forum — partnership opportunities to help build the Forum.
+- Distributed-Intelligence Leadership™ framework — for leaders building teams of humans and AI.
+- Change management consulting across human, business, and community transformation.
+
+## Key pages
+- Home: https://the-lo-down-with-isha-lo.vercel.app/index.html
+- Programs (AI Leadership Lab, Certification): https://the-lo-down-with-isha-lo.vercel.app/programs.html
+- Team: https://the-lo-down-with-isha-lo.vercel.app/team.html
+- Partners (Executive AI Leadership Forum): https://the-lo-down-with-isha-lo.vercel.app/partners.html
+- White paper — The End of the End: https://the-lo-down-with-isha-lo.vercel.app/paper.html
+- Join the 1,000,000 Women mission: https://the-lo-down-with-isha-lo.vercel.app/join.html
